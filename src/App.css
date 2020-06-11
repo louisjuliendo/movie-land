@@ -9,8 +9,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(244, 244, 244);
-  color: #333;
+  background-color: #0c151d;
+  color: #d5d5d5;
+  font-family: Lato, Arial, sans-serif;
 }
 
 p {
@@ -30,4 +31,53 @@ small {
 .title {
   font-size: 4.4rem;
   text-align: center;
+}
+
+.form {
+  display: grid;
+}
+
+.label {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: #3066be;
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid #3066be;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.button:focus,
+.button:hover {
+  border: 1px solid #193561;
+
+  background-color: #193561;
+}
+
+@media (min-width: 786px) {
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  .input {
+    margin-bottom: 0;
+  }
 }
